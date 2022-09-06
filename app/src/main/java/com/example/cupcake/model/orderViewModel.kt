@@ -42,7 +42,7 @@ class OrderViewModel: ViewModel() {
     }
 
 //    if special order is selected make the current date not available on pickup options
-     fun getUpdatedDate(){
+private fun getUpdatedDate(){
          if (flavor.value.equals(SPECIAL_ORDER)){
              dateOptions = updateDateOptions()
          }else{
@@ -132,9 +132,9 @@ class OrderViewModel: ViewModel() {
 
 //   set a default date to the first day
 //    setDate(options[0])
-    Log.d("orderViewModel", "Ma options {$options}")
+//    Log.d("orderViewModel", "Ma options {$options}")
         return options
-    Log.d("orderViewModel", "Ma options {$options}")
+//    Log.d("orderViewModel", "Ma options {$options}")
     }
 
 //    reset the MutableLiveData properties in the view model,
